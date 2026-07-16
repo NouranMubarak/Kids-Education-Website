@@ -1,17 +1,25 @@
-.news-page{
+/*--------------------------------بداية صفحة ال NEWS & EVENTS ---------------------------------------------------------*/
+
+.news-page,
+.FAQ-page
+{
 
     font-family: 'Poppins', sans-serif;
     background-image: url('education\ bg.png');
 
 }
 
-.news-page h1{
+.news-page h1,
+.FAQ-page h1
+{
 
     font-size:50px;
 
 }
 
-.news-page p{
+.news-page p,
+.FAQ-page p
+{
 
     font-size: large;
     line-height:1.6;
@@ -208,3 +216,169 @@ a{
     color:rgb(19, 19, 116);
 
 }
+
+
+/*--------------------بداية صفحة ال FAQ-------------------------------------------------------------*/
+
+
+.question-container{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 1550px;
+    height:auto;
+
+}
+
+.question-grid{
+
+
+    width: 50%;
+    gap: 25px;
+    margin-bottom: 35px;
+
+}
+
+
+.question-card{
+
+    background: rgb(247, 247, 247);
+    border-radius: 18px;
+    border: 1 solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,.09);
+    margin-bottom: 10px;
+    transition: .3s;
+    margin:10px;
+    padding: 20px;
+    
+
+}
+
+.question-card:hover{
+
+    cursor:pointer;
+    transform: translateY(-2px);
+
+}
+
+.question-content{
+
+    margin-bottom: 10px;
+
+}
+
+.question-content summary{
+
+    padding: 10px;
+    color:rgb(19, 19, 116);
+
+}
+
+.FAQ-right{
+
+    width: 55%;
+    line-height: 1.8;
+
+}
+
+.contact-FAQ{
+
+    background: #f2eefb;
+    border-radius: 18px;
+    border: 1 solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,.09);
+    margin-bottom: 0px;
+    transition: .3s;
+    margin:10px;
+    padding: 30px;
+    width: 350px;
+    height: 250px;
+
+}
+
+.contact-FAQ h3{
+
+    font-size:x-large;
+    margin-top: 20px;
+
+}
+
+.contact-button{
+
+    display: inline-block;
+    padding: 6px 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    color:white;
+    background: #7C6CF6;
+
+}
+
+.contact-button a{
+
+    color: white;
+    word-break: 2px;
+
+}
+
+.contact-button:hover{
+
+    color: #6A5AE8;
+    transform: translateY(-1px);
+    cursor: pointer;
+
+}
+
+.quick-links-container{
+
+    background: #f2eefb;
+    border-radius: 18px;
+    border: 1 solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,.09);
+    margin-bottom: 10px;
+    transition: .3s;
+    margin:10px;
+    padding: 30px;
+    width: 350px;
+    height: 340px;
+
+}
+
+.quick-links-container h3{
+
+    margin-top: 20px;
+    font-size: x-large
+
+}
+
+
+.FAQ-quick-link{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    color:white;
+    background: rgb(247, 247, 247);
+
+}
+
+.FAQ-quick-link a{
+
+    color:rgb(19, 19, 116); 
+
+}
+
+.FAQ-quick-link:hover{
+
+    cursor: pointer;
+    transform: translateY(-2px);
+
+}
+
