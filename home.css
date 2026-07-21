@@ -294,59 +294,60 @@ nav.links a:hover:not(.active) {
 }
 @media screen and (max-width: 768px) {
     html, body {
-        overflow-x: hidden;
-        width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    div, section, header, footer, .wrap, .panel {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
     .wrap {
-        padding: 0 15px;
-        width: 100%;
-        box-sizing: border-box;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
     .nav {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        height: auto !important;
     }
     .nav .links {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        margin-top: 15px;
-    }
-    .hero .wrap {
-        flex-direction: column-reverse; 
-        text-align: center;
-    }
-
-    .hero .img2 img {
-        max-width: 100%;
-        height: auto;
-    }
-    .hero .ta {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-    .subjects .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 15px;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 12px !important;
+        padding: 10px 0 !important;
     }
     .teach {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: column !important;
+        width: 100% !important;
     }
-    .teach-grid, .library-grid {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        gap: 10px;
+    .panel {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    .teach-grid, 
+    .library-grid, 
+    .grid {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 15px !important;
+    }
+    .teach-card, 
+    .book-card, 
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
     }
     .footer .top {
-        flex-direction: column;
-        gap: 25px;
-        text-align: center;
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 25px !important;
     }
     .footer .foot ul {
-        padding: 0;
+        padding: 0 !important;
     }
 }
