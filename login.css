@@ -3,6 +3,12 @@
     padding:0;
     box-sizing:border-box;
 }
+header.nav{
+    top:0;
+    left:0;
+    position: fixed;
+    width: 100%;
+}
 body{
     font-family:'Poppins',sans-serif;
     background:linear-gradient(135deg,#FFF8E7,#E8F8FF,#FFF0F6);
