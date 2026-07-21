@@ -1,387 +1,161 @@
-/*--------------------------------بداية صفحة ال NEWS & EVENTS ---------------------------------------------------------*/
-
-.news-page,
-.FAQ-page
-{
-
-    font-family: 'Poppins', sans-serif;
-    background-image: url('education\ bg.png');
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
-.news-page h1,
-.FAQ-page h1
-{
-
-    font-size:50px;
-
-}
-
-.news-page p,
-.FAQ-page p
-{
-
-    font-size: large;
-    line-height:1.6;
-
-}
-
-.news-header{
-
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#FFF8E7,#E8F8FF,#FFF0F6);
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 35px;
-
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+    position:relative;
 }
-
-.news-grid{
-
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-    margin-bottom: 35px;
-
-}
-
-.news-card{
-
-    background:white;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
-    transition:.3s;
-
-}
-
-.news-card:hover{
-
-    transform: translateY(-8px);
-
-}
-
-.news-card img{
-
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-
-}
-
-.news-content{
-
-    padding: 18px;
-
-}
-
-.tag{
-
-    display: inline-block;
-    padding: 6px 14px;
-    margin-bottom: 10px;
-    border-radius: 18px;
-    font-size: 15px;
-    color:white;
-    
-}
-
-.news-card a:hover{
-
-    cursor:pointer;
-
-}
-
-.purple{
-
-    background-color: rgb(216, 59, 216);
-
-}
-
-.green{
-
-    background-color: rgb(147, 226, 28);
-
-}
-
-.orange{
-
-    background-color: rgb(248, 180, 55);
-
-}
-
-.blue{
-
-    background-color: rgb(116, 116, 250);
-
-}
-
-a{
-
-    text-decoration: none;
-
-}
-
-.read-more-purple-text{
-
-    color:rgb(253, 200, 253);
-
-}
-
-.read-more-green-text{
-
-    color:rgb(127, 171, 60);
-
-}
-
-.read-more-orange-text{
-
-    color:rgb(255, 205, 111);
-
-}
-
-.read-more-blue-text{
-
-    color:rgb(186, 186, 234);
-
-}
-
-.news-content h3{
-
-    color:rgb(19, 19, 116);
-
-}
-
-.news-header h2, a{
-
-    color:rgb(19, 19, 116);
-}
-
-
-.event-header{
-
+.main{
+    width:100%;
+    max-width:1000px;
+    height:580px;
+    background:#fff;
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 35px;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+    position:relative;
 }
-
-.event-grid{
-
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:25px;
-    margin-bottom: 35px;
-
+.welcome{
+    flex:1;
+    background-image:url("kid1.jpg");
+    position:relative;
+    display:flex;
+    background-size:100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
-
-.event-card{
-
-    background:white;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
+.welcome::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.25);
+}
+.welcome-content{
+    position:relative;
+    color:white;
+    padding:30px;
+}
+.welcome-content h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+.welcome-content p{
+    font-size:18px;
+}
+.login{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:45px;
+}
+.login-box{
+    width:100%;
+}
+.login-box h2{
+    color:#4D96FF;
+    margin-bottom:8px;
+}
+.title{
+    color:#686868;
+    margin-bottom:30px;
+}
+.input{
+    margin-bottom:18px;
+}
+.input label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#555;
+}
+.input input{
+    width:100%;
+    padding:14px 18px;
+    border:2px solid #FFE08A;
+    border-radius:18px;
+    font-size:15px;
     transition:.3s;
-    
-
+    outline:none;
+}
+.input input:focus{
+    border-color:#6EC6FF;
+    box-shadow:0 0 10px rgba(110,198,255,.3);
+}
+.forgot-link{
+    display:block;
+    text-align:right;
+    color:#4D96FF;
+    text-decoration:none;
+    font-size:14px;
+    margin-bottom:20px;
 }
 
-.event-card img{
-
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-
+.forgot-link:hover{
+    text-decoration:underline;
 }
-
-.event-card:hover{
-
-    transform: translateY(-8px);
-
-}
-
-.event-content{
-
-    padding: 10px;
-
-}
-
-.event-content h3{
-
-    color:rgb(19, 19, 116);
-
-}
-
-.event-header h2, h3, a{
-
-    color:rgb(19, 19, 116);
-
-}
-
-
-/*--------------------بداية صفحة ال FAQ-------------------------------------------------------------*/
-
-
-.question-container{
-
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 1400px;
-    height:auto;
-
-}
-
-.question-grid{
-
-
-    width: 55%;
-    gap: 25px;
-    margin-bottom: 35px;
-
-}
-
-
-.question-card{
-
-    background: rgb(247, 247, 247);
-    border-radius: 18px;
-    border: 1 solid black;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,.09);
-    margin-bottom: 10px;
-    transition: .3s;
-    margin:10px;
-    padding: 20px;
-    
-
-}
-
-.question-card:hover{
-
+.login-btn{
+    width:100%;
+    padding:15px;
+    background:#FF8FAB;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:17px;
+    font-weight:600;
     cursor:pointer;
-    transform: translateY(-2px);
-
+    transition:.3s;
 }
 
-.question-content{
-
-    margin-bottom: 10px;
-
+.login-btn:hover{
+    background:#ff6f9f;
+    transform:translateY(-3px);
+}
+.or{
+    text-align:center;
+    margin:22px 0;
+    color:#999;
+}
+.google-btn{
+    width:100%;
+    padding:13px;
+    border:2px solid #ddd;
+    border-radius:30px;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    transition:.3s;
 }
 
-.question-content summary{
-
-    padding: 10px;
-    color:rgb(19, 19, 116);
-
+.google-btn:hover{
+    background:#4a49ac;
+    transform:translateY(-3px);
 }
-
-
-.FAQ-right{
-
-    width: 55%;
-    line-height: 1.8;
-    position: relative;
-    left: 75px;
-
+.signup{
+    margin-top:22px;
+    text-align:center;
+    color:#686868;
 }
-
-.contact-FAQ{
-
-    background: #f2eefb;
-    border-radius: 18px;
-    border: 1 solid black;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,.09);
-    margin-bottom: 0px;
-    transition: .3s;
-    margin:10px;
-    padding: 30px;
-    width: 350px;
-    height: 250px;
-
+.signup a{
+    color:#FF8FAB;
+    text-decoration:none;
+    font-weight:600;
 }
-
-.contact-FAQ h3{
-
-    font-size:x-large;
-    margin-top: 20px;
-
+.signup a:hover{
+    text-decoration:underline;
 }
-
-.contact-button{
-
-    display: inline-block;
-    padding: 6px 14px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    font-size: 15px;
-    color:white;
-    background: #7C6CF6;
-
-}
-
-.contact-button a{
-
-    color: white;
-    word-break: 2px;
-
-}
-
-.contact-button:hover{
-
-    color: #6A5AE8;
-    transform: translateY(-1px);
-    cursor: pointer;
-
-}
-
-.quick-links-container{
-
-    background: #f2eefb;
-    border-radius: 18px;
-    border: 1 solid black;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,.09);
-    margin-bottom: 10px;
-    transition: .3s;
-    margin:10px;
-    padding: 30px;
-    width: 350px;
-    height: 340px;
-
-}
-
-.quick-links-container h3{
-
-    margin-top: 20px;
-    font-size: x-large
-
-}
-
-
-.FAQ-quick-link{
-
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    font-size: 15px;
-    color:white;
-    background: rgb(247, 247, 247);
-
-}
-
-.FAQ-quick-link a{
-
-    color:rgb(19, 19, 116); 
-
-}
-
-.FAQ-quick-link:hover{
-
-    cursor: pointer;
-    transform: translateY(-2px);
-
-}
-
