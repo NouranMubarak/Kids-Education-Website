@@ -295,20 +295,58 @@ nav.links a:hover:not(.active) {
 @media screen and (max-width: 768px) {
     html, body {
         overflow-x: hidden;
+        width: 100%;
     }
-    nav,.nav-links {
-        flex-direction: column !important;
-        align-items: center !important;
-        width: 100% !important;
+    .wrap {
+        padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
     }
-    .grid, .subjects{
-        flex-direction: column !important;
-        grid-template-columns: 1fr !important;
-        width: 100% !important;
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
     }
-    img,.card, .input-group {
-        width: 100% !important;
-        max-width: 100% !important;
+    .nav .links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .hero .wrap {
+        flex-direction: column-reverse; 
+        text-align: center;
+    }
+
+    .hero .img2 img {
+        max-width: 100%;
+        height: auto;
+    }
+    .hero .ta {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .subjects .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+    }
+    .teach {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .teach-grid, .library-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 10px;
+    }
+    .footer .top {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    .footer .foot ul {
+        padding: 0;
     }
 }
- 
