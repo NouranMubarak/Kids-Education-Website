@@ -292,4 +292,23 @@ nav.links a:hover:not(.active) {
   flex-wrap:wrap;
   gap:10px;
 }
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    nav,.nav-links {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+    .grid, .subjects{
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+    }
+    img,.card, .input-group {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
  
