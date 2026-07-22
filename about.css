@@ -257,6 +257,104 @@ h6{
     line-height: 20px;
     color: #555;
 }
+.footer {
+  background: var(--navy-dark);
+  color: #cfd3e6;
+  padding: 60px 0 0;
+}
+.footer .wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 36px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.foot h4 {
+  color: #fff;
+  font-size: 14.5px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.foot ul li {
+  margin-bottom: 10px;
+}
+.foot ul li a {
+  font-size: 13.5px;
+  color: #a9aec7;
+  text-decoration: none;
+}
+.foot ul li a:hover {
+  color: var(--gold);
+}
+.contact li {
+  font-size: 13.5px;
+  color: #a9aec7;
+  margin-bottom: 12px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  font-size: 12.5px;
+  color: #8890ac;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .wrap {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .nav {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    height: auto !important;
+  }
+  .nav .links {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 12px !important;
+    padding: 10px 0 !important;
+  }
+  .teach {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+  .panel {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+  .teach-grid,
+  .library-grid,
+  .grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit,minmax(130px ,1fr)) !important;
+    width: 100% !important;
+    gap: 15px !important;
+  }
+  .teach-card,
+  .book-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .footer .top {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+    gap: 25px !important;
+  }
+  .footer .foot ul {
+    padding: 0 !important;
+    list-style: none;
+  }
+}
 /*responsive*/
 @media( max-width:768px){
     .section1 .part1{
