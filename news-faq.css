@@ -81,6 +81,7 @@ nav.links a:hover:not(.active) {
 .FAQ-page {
   font-family: "Poppins", sans-serif;
   background-image: url("education\ bg.png");
+  margin: 0;
 }
 
 .news-page h1,
@@ -279,7 +280,7 @@ a {
   margin-bottom: 35px;
 }
 
-@media (max-width) {
+@media (max-width: 1040px) {
   .event-grid {
     grid-template-columns: repeat(2, 1fr);
   }
