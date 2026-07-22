@@ -137,6 +137,7 @@ nav.links a:hover:not(.active) {
   .news-header h1,
   .FAQ-page h1 {
     font-size: 36px;
+    color: #1E3A5F;
   }
 
   .news-page p,
