@@ -2,11 +2,91 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --navy: #1b2a6b;
+  --navy-dark: #141f52;
+  --gold: #f5b800;
+  --cream: #fbf4e8;
+  --green: #5fbe4f;
+  --pink: #f4796f;
+  --blue: #2d8cff;
+  --purple: #8a5fcc;
+  --ink: #2e2a26;
+  --muted: #7a7570;
+  --line: #efe7d8;
+  --radius: 18px;
+}
 body {
   background-image: url(pictures/education\ bg.png);
   font-family: "Poppins", sans-serif;
 }
+header.nav {
+  width: 100%;
+  background-color: var(--navy-dark);
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 10px 40px;
+  box-sizing: border-box;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.brand .logo {
+  width: 36px;
+  height: 36px;
+  background: var(--navy, #1e272e);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+.brand .name {
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.brand .tag {
+  font-size: 10.5px;
+  color: white;
+}
+nav.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  color: white;
+}
+nav.links a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav.links a.active {
+  background-color: #d6a000ab;
+  color: #ffffff;
+  font-weight: 700;
+}
+nav.links a:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.25);
+}
 .container {
+  margin-top: 15px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -16,15 +96,14 @@ body {
   justify-content: center;
   align-items: flex-start;
   margin: 50px auto;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-.information ,
-.form{
-    flex: 1;
-    padding: 40px;
+.information,
+.form {
+  flex: 1;
+  padding: 40px;
 }
 .information {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +113,7 @@ body {
   margin-bottom: 30px;
 }
 .information span {
-  margin: 0  20px 0 0 ;
+  margin: 0 20px 0 0;
   font-size: 40px;
   font-family: "Fredoka", sans-serif;
   background-image: linear-gradient(132deg, #6325a5 0%, #b0476c 100%);
@@ -42,51 +121,50 @@ body {
   background-clip: text;
   color: transparent;
 }
-.social ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 25px;
+.social ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
 }
 .social ul li {
-    gap: 10px;
-    margin-bottom: 12px;
+  gap: 10px;
+  margin-bottom: 12px;
 }
-.social ul li img{
-    width: 30px;
-    height: 30px;
-    align-items: center;
+.social ul li img {
+  width: 30px;
+  height: 30px;
+  align-items: center;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.form input{
-    margin-bottom: 20px;
-    width: 100%;
-    border-radius: 14px;
-    padding: 10px;
-    background-color:rgba(100, 148, 237, 0.384);
-    color: black;
+.form input {
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 14px;
+  padding: 10px;
+  background-color: rgba(100, 148, 237, 0.384);
+  color: black;
+}
+.prob {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 14px;
+  padding: 40px 10px;
+  background-color: rgba(100, 148, 237, 0.384);
+  color: black;
+}
 
-}
-.prob{
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-textarea{
-    margin-bottom: 20px;
-    width: 100%;
-    border-radius: 14px;
-    padding: 40px 10px;
-    background-color:rgba(100, 148, 237, 0.384);
-    color: black;
-}
-
-.form .title{
+.form .title {
   margin-bottom: 20px;
   font-size: 35px;
   font-family: "Fredoka", sans-serif;
@@ -94,4 +172,114 @@ textarea{
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+.footer {
+  background: var(--navy-dark);
+  color: #cfd3e6;
+  padding: 60px 0 0;
+}
+.top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 36px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.foot h4 {
+  color: #fff;
+  font-size: 14.5px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.foot ul li {
+  margin-bottom: 10px;
+}
+.foot ul li a {
+  font-size: 13.5px;
+  color: #a9aec7;
+  text-decoration: none;
+}
+.foot ul li a:hover {
+  color: var(--gold);
+}
+.contact li {
+  font-size: 13.5px;
+  color: #a9aec7;
+  margin-bottom: 12px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  font-size: 12.5px;
+  color: #8890ac;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .wrap {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .nav {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    height: auto !important;
+  }
+  .nav .links {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 12px !important;
+    padding: 10px 0 !important;
+  }
+  .footer .top {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+    gap: 25px !important;
+  }
+  .footer .foot ul {
+    padding: 0 !important;
+    list-style: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+  }
+  .form,
+  .information {
+    width: 100%;
+    padding: 10px;
+  }
+  .information span {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .form .title {
+    font-size: 25px;
+    text-align: center;
+  }
+  textarea {
+    padding: 20px 5px;
+    width: 85%;
+  }
+  .information img {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .form input {
+    width: 80%;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+  }
 }
