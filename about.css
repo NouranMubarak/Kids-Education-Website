@@ -139,7 +139,7 @@ h3{
     gap: 15px;
 }
 .section2 .part2 .box{ 
-    width: 330px;
+    width: 340px;
     background-color: #FFF;
     border-radius: 15px;
     text-align: center;
@@ -178,12 +178,12 @@ h3{
 }
 .section2 .part2 .box2 h5{ 
     color:#1E3A5F;
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 .section2 .part2 .box2 p{ 
     color: #555;
-    font-size: 20px;
+    font-size: 15px;
 }
 .section3 .part2{
     width: 90%;
