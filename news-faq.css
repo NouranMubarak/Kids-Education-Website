@@ -89,6 +89,22 @@ nav.links a:hover:not(.active) {
   font-size: 50px;
   color: var(--navy) !important;
 }
+
+.news-title{
+  max-width: 1180px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.news-title h1 {
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.news-title {
+ color: var(--muted);
+}
+
 .footer {
   background: var(--navy-dark);
   color: #cfd3e6;
