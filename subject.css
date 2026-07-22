@@ -177,6 +177,12 @@ nav.links a:hover:not(.active) {
     color: #FFF;
     transition-duration: 0.8s;
 }
+
+.section2 .box button:hover {
+    cursor: pointer;
+    transform: translateY(0.2s); 
+}
+
 .math i,.math button{
     background-color: #66BB6A;
 }
