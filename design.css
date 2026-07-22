@@ -115,6 +115,14 @@ nav.links a:hover:not(.active) {
   font-size: 20px;
   margin-bottom: 20px;
 }
+
+.container h2,
+.prob,
+.name {
+  color: var(--navy) !important;
+}
+
+
 .teachers {
   display: flex;
   flex-wrap: wrap;
@@ -155,6 +163,7 @@ nav.links a:hover:not(.active) {
   object-position: center;
   border-radius: 20px;
   margin-bottom: 15px;
+  border-radius:20px 20px 0 0;
 }
 .name {
   font-size: 20px;
@@ -168,6 +177,7 @@ nav.links a:hover:not(.active) {
   background-color: #4a2bb1d5;
   color: white;
   font-size: 17px;
+  overflow:hidden;
 }
 .card:hover {
   transform: translateY(-8px);
@@ -227,10 +237,9 @@ nav.links a:hover:not(.active) {
   font-family: "Poppins", sans-serif;
   padding: 10px;
   border-radius: 14px;
-  background-image: linear-gradient(132deg, #6325a5 0%, #b0476c 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--navy);
+  background: none;
+
 }
 .footer {
   background: var(--navy-dark);
