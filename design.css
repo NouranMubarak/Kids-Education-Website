@@ -126,7 +126,7 @@ nav.links a:hover:not(.active) {
 .teachers {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 30px;
   margin-top: 40px;
 }
