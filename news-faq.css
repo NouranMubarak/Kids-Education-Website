@@ -39,13 +39,13 @@ header.nav {
   justify-content: center;
   color: #fff;
   font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Poppins", Courier, monospace;
 }
 .brand .name {
   font-size: 18px;
   font-weight: 800;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
 }
 .brand .tag {
   font-size: 10.5px;
@@ -67,7 +67,7 @@ nav.links a {
   border-radius: 12px;
   transition: all 0.2s ease;
   white-space: nowrap;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
 }
 nav.links a.active {
   background-color: #d6a000ab;
