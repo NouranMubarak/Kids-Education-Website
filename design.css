@@ -169,8 +169,9 @@ nav.links a:hover:not(.active) {
   font-size: 17px;
 }
 .card:hover {
-  transform: translateY(-15px);
+  transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .card button:hover {
