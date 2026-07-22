@@ -263,6 +263,12 @@ nav.links a:hover:not(.active) {
   background: #fff;
   text-align: center;
 }
+
+.teach-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
+
 .teach-photo {
   width: 100%;
   aspect-ratio: 4 / 5;
@@ -303,6 +309,13 @@ nav.links a:hover:not(.active) {
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
+
+.book-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
+
+
 .book-card:nth-child(1) {
   background-color: #1d3e7c;
   background-image: url("phto1.jpeg");
