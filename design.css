@@ -121,6 +121,18 @@ nav.links a:hover:not(.active) {
   color: var(--navy) !important;
 }
 
+.teachers-title{
+   width: 100%;
+   max-width: 1180px;
+   padding: 0 24px;
+}
+
+.teachers-title h2,
+.teachers-title span {
+  text-align: left;
+  display: block;
+}
+
 
 .teachers {
   display: flex;
