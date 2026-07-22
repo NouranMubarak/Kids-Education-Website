@@ -9,6 +9,84 @@ body{
     background-image:linear-gradient(to bottom,#FFF ,rgb(213, 223, 245));
     font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+  --navy: #1b2a6b;
+  --navy-dark: #141f52;
+  --gold: #f5b800;
+  --cream: #fbf4e8;
+  --green: #5fbe4f;
+  --pink: #f4796f;
+  --blue: #2d8cff;
+  --purple: #8a5fcc;
+  --ink: #2e2a26;
+  --muted: #7a7570;
+  --line: #efe7d8;
+  --radius: 18px;
+}
+header.nav {
+  width: 100%;
+  background-color: var(--navy-dark);
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 10px 40px;
+  box-sizing: border-box;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.brand .logo {
+  width: 36px;
+  height: 36px;
+  background: var(--navy, #1e272e);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+.brand .name {
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.brand .tag {
+  font-size: 10.5px;
+  color: white;
+}
+nav.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  color: white;
+}
+nav.links a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav.links a.active {
+  background-color: #d6a000ab;
+  color: #ffffff;
+  font-weight: 700;
+}
+nav.links a:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.25);
+}
 .section1{
     overflow: auto;
      width: 90%;
