@@ -1,0 +1,166 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+
+    width: 100%;
+    background-image:linear-gradient(to bottom,#FFF ,rgb(213, 223, 245));
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section1{
+    width: 90%;
+    margin: 30px auto;
+    overflow: auto;
+    padding: 10px;
+}
+.section1 .text{
+    width: 50%;
+    float: left;
+    padding-top: 50px;
+    margin-left: 45px;
+}
+.section1 .text h2{
+    font-size: 50px;
+    color: #1E3A5F;
+    margin-bottom: 20px;
+}
+.section1 .text p{
+    width: 100%;
+    font-size: 20px;
+    color: #555;
+    line-height: 40px;
+    
+}
+.section1 .image{
+    width: 45%;
+   float: right; 
+
+   
+}
+.section1 .image img{
+    width: 100%;
+    border-radius: 30px;
+    border: #FFF solid 1px;
+   box-shadow: 5px 5px 15px #9b9b9b ;
+
+}
+.section2{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.section2 .box{ 
+    width: 240px;
+    background-color: #FFF;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 5px 5px 15px #9b9b9b ; 
+    transition-duration: 0.8s;
+}
+.section2 .box:hover{
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 15px #9b9b9b ;
+}
+.section2 .box i{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: #FFF;
+    margin:0px auto 20px ;
+    
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section2 .box h3{
+    color: #1E3A5F;
+    margin-bottom:15px ;
+    font-size: 20px;
+}
+.section2 .box p{
+    color: #666;
+    line-height: 1.6;
+    margin-bottom:20px ;
+}
+.section2 .box button{
+    padding: 10px 25px;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #FFF;
+    transition-duration: 0.8s;
+}
+.math i,.math button{
+    background-color: #66BB6A;
+}
+.eng i,.eng button{
+    background-color: #FF6B6B;
+}
+.science i,.science button{
+    background-color: #FFC107;
+}
+.arabic i,.arabic button{
+    background-color: #2F80ED;
+}
+.social i,.social button{
+    background-color: #8E5CE6;
+}
+.art i,.art button{
+    background-color: #4FC3dC;
+}
+.music i,.music button{
+    background-color: #FF9F43;
+}
+.phy i,.phy button{
+    background-color: #FF77C8;
+}
+.com i,.com button{
+    background-color: #5B8DEF;
+}
+.skills i,.skills button{
+    background-color: #7BC96F;
+}
+.section2 .box button:hover{
+    transform: scale(1.1) translateY(-3px);
+}
+/*responsive*/
+@media (max-width:768px) {
+    .section1{
+        width: 90%;
+    }
+    .section1 .text{
+        width: 100%;
+        float:none;
+        
+        margin-left: 0px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .section1 .text h2{
+        font-size: 30px;
+    }
+    .section1 .text p{
+        font-size: 15px;
+        width: 100%;
+    }
+    .section1 .image{
+        width: 90%;
+        float:none;
+        margin: 15px auto;
+    }
+    .section1 .image img{
+        width: 100%;
+    }
+    .section2 .box{
+        width: 90%;
+    }
+}

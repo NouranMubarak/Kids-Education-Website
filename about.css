@@ -1,0 +1,219 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+
+    width: 100%;
+    background-image:linear-gradient(to bottom,#FFF ,rgb(213, 223, 245));
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section1{
+    overflow: auto;
+     width: 90%;
+    margin: 30px auto;
+    overflow: auto;
+    padding: 10px;
+}
+.section1 .part1{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.section1 .part1 h2{
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color:#1E3A5F ;
+    
+}
+.section1 .part1 p{
+    font-weight: 250;
+    font-size: 20px;
+    line-height: 40px;
+    color: #555;
+}
+.section1 .part2{
+    width: 50%;
+    float: right;
+}
+.section1 .part2 img{
+    width: 100%;
+    border-radius: 30px;
+    border: #FFF solid 1px;
+   box-shadow: 5px 5px 15px #9b9b9b ;
+}
+h3{
+    text-align: center;
+    margin: 50px auto;
+    font-weight: 400;
+    font-size:40px ;
+    margin-bottom: 15px;
+    color:#1E3A5F ;
+}
+.section2 .part2{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.section2 .part2 .box{ 
+    width: 330px;
+    background-color: #FFF;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    overflow: auto;
+    box-shadow: 5px 5px 15px #9b9b9b ;
+    transition-duration: 0.8s;
+}
+.section2 .part2 .box:hover{
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 15px #9b9b9b ;
+}
+.section2 .part2 .box1{ 
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: #FFF;
+    float: left;
+    padding: 20px 0px ;
+    font-size: 40px;
+}
+.section2 .part2 .student {
+    background-color: #5B8DEF;
+}
+.section2 .part2 .teacher {
+    background-color: #7BC96F;
+}
+.section2 .part2 .won {
+    background-color: #FF9F43;
+}
+.section2 .part2 .year {
+    background-color: #8E5CE6;
+}
+.section2 .part2 .box2 { 
+    float: right;
+}
+.section2 .part2 .box2 h5{ 
+    color:#1E3A5F;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.section2 .part2 .box2 p{ 
+    color: #555;
+    font-size: 20px;
+}
+.section3 .part2{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.section3 .part2 .image{
+    width: 230px;
+    
+}
+.section3 .part2 .image img{
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 15px #9b9b9b ; 
+    transition-duration: 0.8s;
+}
+.section3 .part2 .image img:hover{
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 8px 8px 15px #9b9b9b ;
+}
+.section4 .part2{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.section4 .part2 .person{
+     width: 350px;
+    background-color: #FFF;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    overflow: auto;
+    box-shadow: 5px 5px 15px #9b9b9b ;
+    transition-duration: 0.8s;   
+}
+.section4 .part2 .person:hover{
+    transform: translateY(-10px);
+}
+.section4 .part2 .person .image{
+    width: 40%;
+    float: left;
+    
+}
+.section4 .part2 .person .image img{
+    width: 100%;
+    border-radius: 50%;
+    margin:0px auto 20px ;
+
+   
+    
+}
+.section4 .part2 .person .text{
+   float: left;
+   width: 60%;
+}
+h6{
+    margin:15px 0px ;
+    font-size:20px ;
+    color:#1E3A5F ;
+}
+.section4 .part2 .person .text p{
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 20px;
+    color: #555;
+}
+/*responsive*/
+@media( max-width:768px){
+    .section1 .part1{
+        width: 100%;
+        float:none;
+        
+        margin-left: 0px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .section1 .part1 h2{
+        font-size: 30px;
+    }
+    .section1 .part1 p{
+        font-size: 15px;
+        width: 100%;
+    }
+    .section1 .part2{
+        width: 90%;
+        float:none;
+        margin: 15px auto;
+    }
+    .section1 .part2 img{
+        width: 100%;
+    }
+    h3{
+       font-weight: 300;
+        font-size:25px ; 
+    }
+
+    .section2 .part2 .box{
+        width: 100%;
+    }
+    .section3 .part2 .image{
+        width: 90%;
+
+    }
+}
