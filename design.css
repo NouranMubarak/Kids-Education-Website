@@ -8,7 +8,7 @@ body {
 }
 :root {
   --navy: #1b2a6b;
-  --navy-dark: #141f52  
+  --navy-dark: #141f52;  
   --gold: #f5b800;
   --cream: #fbf4e8;
   --green: #5fbe4f;
@@ -22,7 +22,7 @@ body {
 }
 header.nav {
   width: 100%;
-  background-color: var(--navy-dark) 
+  background-color: var(--navy-dark); 
   display: flex;
   color: white !important;
   align-items: center;
@@ -118,7 +118,7 @@ nav.links a:hover:not(.active) {
 .container h2,
 .prob,
 .name {
-  color: var(--navy) !important;
+  color: var(--navy);
 }
 
 .teachers-title{
