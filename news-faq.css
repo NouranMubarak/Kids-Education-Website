@@ -84,6 +84,10 @@ nav.links a:hover:not(.active) {
   margin: 0;
 }
 
+.news-container{
+  margin:auto;
+}
+
 .news-page h1,
 .FAQ-page h1 {
   font-size: 50px;
