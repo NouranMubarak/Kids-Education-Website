@@ -8,7 +8,7 @@ body {
 }
 :root {
   --navy: #1b2a6b;
-  --navy-dark: #141f52 !important; 
+  --navy-dark: #141f52  
   --gold: #f5b800;
   --cream: #fbf4e8;
   --green: #5fbe4f;
@@ -22,7 +22,7 @@ body {
 }
 header.nav {
   width: 100%;
-  background-color: var(--navy-dark) !important;
+  background-color: var(--navy-dark) 
   display: flex;
   color: white !important;
   align-items: center;
@@ -39,7 +39,7 @@ header.nav {
 .brand .logo {
   width: 36px;
   height: 36px;
-  background: var(--navy, #1e272e) !important;
+  background: var(--navy, #1e272e) 
   border-radius: 8px;
   display: flex;
   align-items: center;
