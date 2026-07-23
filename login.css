@@ -32,7 +32,7 @@ body{
 }
 .welcome{
     flex:1;
-    background-image:url("child thinking 2.png");
+    background-image:url("kids-home-image.png");
     position:relative;
     display:flex;
     background-size:100% 100%; 
