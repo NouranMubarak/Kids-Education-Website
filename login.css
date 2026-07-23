@@ -16,7 +16,7 @@ body{
     justify-content:center;
     align-items:center;
     min-height:100vh;
-    overflow:hidden;
+    overflow-x:hidden;
     position:relative;
 }
 .main{
@@ -166,7 +166,7 @@ body{
 }
 
 @media (max-width: 900px){
-
+    body{overflow-y:auto;}
     .main{
         max-width:90%;
         height:auto;
