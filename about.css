@@ -139,7 +139,7 @@ h3{
     gap: 10px;
 }
 .section2 .part2 .box{ 
-    width: 320px;
+    width: 300px;
     background-color: #FFF;
     border-radius: 15px;
     text-align: center;
@@ -159,7 +159,7 @@ h3{
     color: #FFF;
     float: left;
    text-aline:center;
-    line-height:80px;
+    line-height:70px;
     font-size: 40px;
 }
 .section2 .part2 .student {
@@ -177,12 +177,12 @@ h3{
 .section2 .part2 .box2 { 
     float: left;
     margin-left:20px;
-    margin-top:5px;
+   
 }
 .section2 .part2 .box2 h5{ 
     color:#1E3A5F;
     font-size: 25px;
-    margin-bottom: 5px;
+    
 }
 .section2 .part2 .box2 p{ 
     color: #555;
