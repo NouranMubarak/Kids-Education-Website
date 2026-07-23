@@ -344,6 +344,21 @@ a {
 
 /*--------------------بداية صفحة ال FAQ-------------------------------------------------------------*/
 
+.faq-title{
+  max-width: 1180px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.faq-title h1 {
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.faq-title {
+ color: var(--muted);
+}
+
 .question-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
