@@ -136,14 +136,14 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 .section2 .part2 .box{ 
     width: 340px;
     background-color: #FFF;
     border-radius: 15px;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     overflow: auto;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
     transition-duration: 0.8s;
@@ -153,8 +153,8 @@ h3{
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
 }
 .section2 .part2 .box1{ 
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     color: #FFF;
     float: left;
