@@ -130,10 +130,14 @@ nav.links a:hover:not(.active) {
 }
 .information span {
   margin: 0 20px 0 0;
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Poppins", sans-serif;
+  font-weight: bold;
   color: var(--navy) !important;
+  color: var(--muted);
 }
+
+
 .social ul {
   list-style: none;
   display: flex;
